@@ -18,10 +18,14 @@ export default {
 
 <style lang="scss" scoped>
 .gallery {
+  background: rgb(2, 0, 40);
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
   justify-content: space-evenly;
+  height: 100vh;
 }
 @media (max-width: 576px) {
   .gallery {

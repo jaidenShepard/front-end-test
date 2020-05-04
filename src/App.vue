@@ -21,7 +21,6 @@ export default {
 }
 
 body {
-  background: rgb(2, 0, 40);
   font-family: "Open Sans";
   text-align: center;
   -webkit-font-smoothing: antialiased;

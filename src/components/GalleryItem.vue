@@ -31,7 +31,7 @@ export default {
 .titleOverlay {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0);
   width: 100%;
   color: white;
   padding: 10px;
