@@ -15,6 +15,7 @@ export default {
 <style lang="scss">
 body {
   color: #2c3e50;
+  font-family: "Open Sans";
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
