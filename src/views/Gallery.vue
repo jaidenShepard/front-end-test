@@ -30,9 +30,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: stretch;
   justify-content: space-evenly;
-  height: 100vh;
 }
 @media (max-width: 576px) {
   .gallery {
