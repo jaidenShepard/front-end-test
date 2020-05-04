@@ -1,26 +1,36 @@
 <template>
-    <div class="gallery">
-        <h1>Gallery</h1>
-
-        <h2>There are **** items</h2>
-
-        <div>
-            <h3>Item Concept</h3>
-            <img src="/img/item-sample.png"
-                alt="Item Concept"
-                width="962"
-                height="544">
-            <p>(delete this part)</p>
-        </div>
-    </div>
+  <div class="gallery">
+    <GalleryItem />
+    <GalleryItem />
+    <GalleryItem />
+    <GalleryItem />
+    <GalleryItem />
+  </div>
 </template>
 
 <script>
+import GalleryItem from "../components/GalleryItem";
 export default {
-    name: 'Gallery',
+  name: "Gallery",
+  components: { GalleryItem }
 };
 </script>
 
 <style lang="scss" scoped>
-
+.gallery {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: 4fr;
+  }
+}
 </style>
