@@ -1,18 +1,25 @@
 <template>
   <div class="app">
-    <router-link to="/">Home</router-link>
-    <router-link to="/gallery">Gallery</router-link>
+    <Header />
     <router-view />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header";
 export default {
-  name: "App"
+  name: "App",
+  components: { Header }
 };
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #2c3e50;
   font-family: "Open Sans";
