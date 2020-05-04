@@ -7,19 +7,19 @@
 </template>
 
 <script>
-import GalleryItem from "../components/GalleryItem";
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex';
+import GalleryItem from '../components/GalleryItem';
 
 export default {
-  name: "Gallery",
-  components: { GalleryItem },
-  methods: {
-    ...mapGetters(["allGalleryItems"])
-  },
-  props: ["items"],
-  created() {
-    this.items = this.allGalleryItems();
-  }
+    name: 'Gallery',
+    components: { GalleryItem },
+    methods: {
+        ...mapGetters(['allGalleryItems']),
+    },
+    props: ['items'],
+    created() {
+        this.items = this.allGalleryItems();
+    },
 };
 </script>
 

@@ -9,20 +9,19 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex';
 
 export default {
-  name: "Header",
-  methods: {
-    numberOfItemsMessage() {
-      if (this.numberOfGalleryItems == 1) {
-        return "There is 1 item";
-      } else {
-        return `There are ${this.numberOfGalleryItems} items`;
-      }
-    }
-  },
-  computed: mapGetters(["numberOfGalleryItems"])
+    name: 'Header',
+    methods: {
+        numberOfItemsMessage() {
+            if (this.numberOfGalleryItems == 1) {
+                return 'There is 1 item';
+            }
+            return `There are ${this.numberOfGalleryItems} items`;
+        },
+    },
+    computed: mapGetters(['numberOfGalleryItems']),
 };
 </script>
 

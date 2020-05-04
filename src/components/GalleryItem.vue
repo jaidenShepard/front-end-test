@@ -9,13 +9,13 @@
 
 <script>
 export default {
-  name: "GalleryItem",
-  props: ["item"],
-  methods: {
-    getSrc(name) {
-      return `/img/${name}`;
-    }
-  }
+    name: 'GalleryItem',
+    props: ['item'],
+    methods: {
+        getSrc(name) {
+            return `/img/${name}`;
+        },
+    },
 };
 </script>
 

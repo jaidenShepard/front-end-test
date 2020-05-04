@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        galleryItems: []
+        galleryItems: [],
 
     },
     mutations: {
@@ -13,7 +13,7 @@ export default new Vuex.Store({
     },
     getters: {
         allGalleryItems: state => state.galleryItems,
-        numberOfGalleryItems: state => state.galleryItems.length
+        numberOfGalleryItems: state => state.galleryItems.length,
     },
     actions: {
 
