@@ -1,5 +1,21 @@
 # Front-End Test
-            
+
+# Debrief
+#### Missing Features
+* Image Lazy Loading
+* Remove Button functionality 
+* Select button functionality
+* Unit tests (Normally I closely follow TDD, but given the short timeframe, and that I was learning vue.js as I went, learning the test framework wasn't a priority)
+* css hover style
+
+#### Issues
+* Padding Between items is inconsistent
+* Padding in header could be improved
+* Images who's original aspect ratio wasn't 16:9 appear stretched
+* Items with missing image appear broken, should be excluded
+
+
+
 ## Instructions
 * Use Vue.js to create a responsive image gallery
 * Use any plugins/packages that you need
