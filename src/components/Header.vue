@@ -4,12 +4,25 @@
       <router-link to="/" exact>Home</router-link>
       <router-link to="/gallery" exact>Gallery</router-link>
     </div>
+    <span>{{(numberOfItemsMessage())}}</span>
   </header>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-  name: "Header"
+  name: "Header",
+  methods: {
+    numberOfItemsMessage() {
+      if (this.numberOfGalleryItems == 1) {
+        return "There is 1 item";
+      } else {
+        return `There are ${this.numberOfGalleryItems} items`;
+      }
+    }
+  },
+  computed: mapGetters(["numberOfGalleryItems"])
 };
 </script>
 
@@ -20,6 +33,10 @@ export default {
 }
 a {
   color: #cbcbcb;
+}
+span {
+  color: #fff;
+  font-weight: bold;
 }
 .header {
   background: linear-gradient(

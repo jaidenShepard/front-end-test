@@ -12,7 +12,8 @@ export default new Vuex.Store({
         setGalleryItems: (state, galleryItems) => (state.galleryItems = galleryItems),
     },
     getters: {
-        allGalleryItems: state => state.galleryItems
+        allGalleryItems: state => state.galleryItems,
+        numberOfGalleryItems: state => state.galleryItems.length
     },
     actions: {
 
