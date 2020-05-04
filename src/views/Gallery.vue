@@ -1,18 +1,25 @@
 <template>
   <div class="gallery">
-    <GalleryItem />
-    <GalleryItem />
-    <GalleryItem />
-    <GalleryItem />
-    <GalleryItem />
+    <div v-for="item in items" :key="item.id">
+      <GalleryItem v-bind:item="item" />
+    </div>
   </div>
 </template>
 
 <script>
 import GalleryItem from "../components/GalleryItem";
+import { mapGetters } from "vuex";
+
 export default {
   name: "Gallery",
-  components: { GalleryItem }
+  components: { GalleryItem },
+  methods: {
+    ...mapGetters(["allGalleryItems"])
+  },
+  props: ["items"],
+  created() {
+    this.items = this.allGalleryItems();
+  }
 };
 </script>
 

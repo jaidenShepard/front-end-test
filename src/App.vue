@@ -7,9 +7,18 @@
 
 <script>
 import Header from "./components/Header";
+import json from "../public/json/item-list.json";
+import { mapGetters, mapMutations } from "vuex";
+
 export default {
   name: "App",
-  components: { Header }
+  components: { Header },
+  methods: {
+    ...mapMutations(["setGalleryItems"])
+  },
+  created() {
+    this.setGalleryItems(json.items);
+  }
 };
 </script>
 

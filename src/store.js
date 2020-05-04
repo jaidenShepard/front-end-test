@@ -5,13 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        galleryItems: []
 
     },
     mutations: {
-
+        setGalleryItems: (state, galleryItems) => (state.galleryItems = galleryItems),
     },
     getters: {
-
+        allGalleryItems: state => state.galleryItems
     },
     actions: {
 
